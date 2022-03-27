@@ -90,9 +90,9 @@ async def command(context):
 
 @client.event
 async def on_ready():
-    general_channel = client.get_channel(598821748984774656)
-    await general_channel.send("Namolnwza007 bot is now online \U0001F7E2")
-
+    await client.change_presence(status=discord.Status.online, activity=discord.Game("Namolnwza007 bot is now online \U0001F7E2"))
+    print('Bot ready')
+    
 @client.event
 async def on_message(message):
     
