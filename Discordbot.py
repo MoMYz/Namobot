@@ -131,5 +131,3 @@ async def on_message(message):
         await general_channel.send('กูว่าแล้ว/กูคิดไว้แล้ว')
 
     await client.process_commands(message)
-
-client.run('OTU2OTM3MTE1NDQ1MzgzMjc5.Yj3fIw.1ngWHdbU_4YsQz5hJgO9NWLUgcA')
