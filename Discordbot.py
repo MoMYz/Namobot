@@ -11,6 +11,10 @@ from discord.utils import get
 client = discord.Client()
 client = commands.Bot(command_prefix='!')
 
+@client.event
+async def on_ready():
+    await client.change_presence(status=discord.Status.online, activity=discord.Game("Namolnwza007"))
+
 @client.command()
 async def botdev(context):
     
@@ -87,11 +91,6 @@ async def command(context):
     myEmbed.add_field(name='!randomnumber100', value='Random number 1-100', inline=False)
 
     await context.message.channel.send(embed=myEmbed)
-
-@client.event
-async def on_ready():
-    await client.change_presence(status=discord.Status.online, activity=discord.Game("Namolnwza007 bot is now online \U0001F7E2"))
-    print('Bot ready')
     
 @client.event
 async def on_message(message):
@@ -131,3 +130,4 @@ async def on_message(message):
         await general_channel.send('กูว่าแล้ว/กูคิดไว้แล้ว')
 
     await client.process_commands(message)
+
