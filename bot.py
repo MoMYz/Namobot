@@ -175,4 +175,4 @@ async def on_message(message):
 
     await client.process_commands(message)
 
-client.run(token)
+client.run(os.environ['token'])
