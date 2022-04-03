@@ -153,10 +153,6 @@ async def on_message(message):
         print(message.channel)
         await message.channel.send('กูว่าแล้ว/กูคิดไว้แล้ว')
     
-    if message.content == 'หลวงปู่ทัช':
-        print(message.channel)
-        await message.channel.send('หลวงปู่ทัช > พระพุทธเจ้า > พระเยซู > อัลเลาะห์')
-
     if message.content == 'นีล':
         print(message.channel)
         await message.channel.send('ไถนาอยู่กับพี่นนครับ')
