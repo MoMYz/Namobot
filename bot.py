@@ -36,7 +36,6 @@ async def on_ready():
 @client.command()
 async def botdev(context):
     
-    print('here')
     myEmbed = discord.Embed(title='Bot developer:', description='Pun Srimuangwong',color=0x66CD00)
     myEmbed.add_field(name="Bot version:", value="V.3.0.1", inline=False)
     myEmbed.set_author(name="MoMYz")
@@ -46,21 +45,18 @@ async def botdev(context):
 
 @client.command()
 async def twitch(context):
-    print('here')
     await context.send("https://www.twitch.tv/momyzch")
     
     await client.process_commands(message)
 
 @client.command()
 async def ig(context):
-    print('here')
     await context.send("https://www.instagram.com/namo_pun/")
     
     await client.process_commands(message)
 
 @client.command()
 async def yt(context):
-    print('here')
     await context.send("https://www.youtube.com/channel/UCWBSrFL8YQpzqYASxaWxtAQ")
     
     await client.process_commands(message)
@@ -103,11 +99,11 @@ async def randomnumber100(context):
 
 @client.command()
 async def command(context):
-    print('here')
-    myEmbed = discord.Embed(title='Bot command:', description='All avaliable command',color=0x66CD00)
+    
+    myEmbed = discord.Embed(title='Bot command \U0001F916:', description='All avaliable command',color=0x66CD00)
     myEmbed.add_field(name='!botdev', value='Bot developer', inline=False)
-    myEmbed.add_field(name='!namotwitch', value='My twitch', inline=False)
-    myEmbed.add_field(name='!namoig', value='My instagram', inline=False)
+    myEmbed.add_field(name='!twitch', value='My twitch', inline=False)
+    myEmbed.add_field(name='!ig', value='My instagram', inline=False)
     myEmbed.add_field(name='!kuy', value='ด่าบอท', inline=False)
     myEmbed.add_field(name='!ต่อยกับ (mention someone)', value='ต่อยกับใครก็ได้', inline=False)
     myEmbed.add_field(name='!ความเหลี่ยม', value='เช็คความเหลี่ยมของคุณ', inline=False)
@@ -115,6 +111,16 @@ async def command(context):
     myEmbed.add_field(name='!randomnumber100', value='Random number 1-100', inline=False)
 
     await context.message.channel.send(embed=myEmbed)
+
+@client.command()
+async def song(context):
+
+    myEmbed = discord.Embed(title='Song command \U0001F3B6:', description='All avaliable song command',color=0x66CD00)
+    myEmbed.add_field(name='!play or !p <song name>', value='play song', inline=False)
+    myEmbed.add_field(name='!pause', value='pause current song', inline=False)
+    myEmbed.add_field(name='!resume', value='resume current song', inline=False)
+    myEmbed.add_field(name='!queue or !q', value='all song in queue', inline=False)
+    myEmbed.add_field(name='!leave', value='kick bot from voice chat', inline=False)
     
 @client.event
 async def on_message(message):
@@ -128,35 +134,15 @@ async def on_message(message):
 
     if message.content == 'ควาย':
         print(message.channel)
-        await message.channel.send(f" {message.author.mention}")               
+        await message.channel.send(f"\U0001F449 {message.author.mention}")               
 
     if message.content == 'นะโม':
         print(message.channel)
         await message.channel.send('นะโม ตัสสะ ภะคะวะโต อะระหะโต สัมมาสัมพุทธัสสะ \U0001F64F')
 
-    if message.content == 'ปัป':
-        print(message.channel)
-        await message.channel.send('ชื่อกูเขียนอย่างนี้ไอสัส "ปั๊ป"')   
-
-    if message.content == 'ปั๊ป':
-        print(message.channel)
-        await message.channel.send('กะหรี่ปั๊ป')
-
-    if message.content == 'นน':
-        print(message.channel)
-        await message.channel.send('ไถนาอยู่ครับพรี่')
-
     if message.content == 'โง่':
         print(message.channel)
         await message.channel.send('ไปนอนไอ้เด็กเหี้ย')
-
-    if message.content == 'ตุลย์':
-        print(message.channel)
-        await message.channel.send('กูว่าแล้ว/กูคิดไว้แล้ว')
-
-    if message.content == 'นีล':
-        print(message.channel)
-        await message.channel.send('ไถนาอยู่กับพี่นนครับ')
 
     if message.content == 'gg':
         print(message.channel)
