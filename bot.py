@@ -115,12 +115,12 @@ async def command(context):
 @client.command()
 async def song(context):
 
-    Embed = discord.Embed(title='Song command \U0001F3B6:', description='All avaliable song command',color=0x66CD00)
-    Embed.add_field(name='!play or !p <song name>', value='play song', inline=False)
-    Embed.add_field(name='!pause', value='pause current song', inline=False)
-    Embed.add_field(name='!resume', value='resume current song', inline=False)
-    Embed.add_field(name='!queue or !q', value='all song in queue', inline=False)
-    Embed.add_field(name='!leave', value='kick bot from voice chat', inline=False)
+    aEmbed = discord.Embed(title='Song command \U0001F3B6:', description='All avaliable song command',color=0x66CD00)
+    aEmbed.add_field(name='!play or !p <song name>', value='play song', inline=False)
+    aEmbed.add_field(name='!pause', value='pause current song', inline=False)
+    aEmbed.add_field(name='!resume', value='resume current song', inline=False)
+    aEmbed.add_field(name='!queue or !q', value='all song in queue', inline=False)
+    aEmbed.add_field(name='!leave', value='kick bot from voice chat', inline=False)
     
 @client.event
 async def on_message(message):
