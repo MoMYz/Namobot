@@ -121,6 +121,8 @@ async def song(context):
     aEmbed.add_field(name='!queue or !q', value='all song in queue', inline=False)
     aEmbed.add_field(name='!leave', value='kick bot from voice chat', inline=False)
     
+    await context.message.channel.send(embed=aEmbed)
+    
 @client.event
 async def on_message(message):
     
