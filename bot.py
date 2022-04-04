@@ -24,8 +24,6 @@ api_sec = os.getenv('API_SECRET')
 client = discord.Client()
 client = commands.Bot(command_prefix='!')
 
-client.remove_command("help")
-
 client.add_cog(music_cog(client))
 
 @client.event
@@ -119,6 +117,7 @@ async def song(context):
     aEmbed.add_field(name='!play or !p <song name>', value='play song', inline=False)
     aEmbed.add_field(name='!pause', value='pause current song', inline=False)
     aEmbed.add_field(name='!resume', value='resume current song', inline=False)
+    aEmbed.add_field(name='!skip', value='skip current song', inline=False)
     aEmbed.add_field(name='!queue or !q', value='all song in queue', inline=False)
     aEmbed.add_field(name='!leave', value='kick bot from voice chat', inline=False)
     
