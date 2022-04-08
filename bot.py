@@ -2,6 +2,7 @@ from json import load
 import discord
 import discord, random
 import asyncio
+from discord.utils import get
 from pydoc import cli
 from ast import alias
 from youtube_dl import YoutubeDL
@@ -34,9 +35,9 @@ async def on_ready():
 @client.command()
 async def botdev(context):
     
-    myEmbed = discord.Embed(title='Bot developer:', description='Pun Srimuangwong',color=0x66CD00)
+    myEmbed = discord.Embed(title='Bot developer:', description='<@462935839379292160>',color=0x66CD00)
     myEmbed.add_field(name="Bot version:", value="V.3.0.1", inline=False)
-    myEmbed.set_author(name="MoMYz")
+    myEmbed.set_author(name="Namo")
     myEmbed.add_field(name="Date released:", value="26 March 2022", inline=False)
     
     await context.message.channel.send(embed=myEmbed)
@@ -52,16 +53,6 @@ async def ig(context):
     await context.send("https://www.instagram.com/namo_pun/")
     
     await client.process_commands(message)
-
-@client.command()
-async def yt(context):
-    await context.send("https://www.youtube.com/channel/UCWBSrFL8YQpzqYASxaWxtAQ")
-    
-    await client.process_commands(message)
-
-@client.command()
-async def kuy(context):
-    await context.send(f"fuck you! \U0001F595 {context.author.mention}")
 
 @client.command()
 async def playlist(context):
@@ -122,7 +113,7 @@ async def song(context):
     aEmbed.add_field(name='!leave', value='kick bot from voice chat', inline=False)
     
     await context.message.channel.send(embed=aEmbed)
-    
+
 @client.event
 async def on_message(message):
     
@@ -137,19 +128,49 @@ async def on_message(message):
         print(message.channel)
         await message.channel.send(f"\U0001F449 {message.author.mention}")               
 
+    if message.content == 'ใครหล่อที่สุด':
+        print(message.channel)
+        await message.channel.send("<@462935839379292160>")
+
     if message.content == 'นะโม':
         print(message.channel)
         await message.channel.send('นะโม ตัสสะ ภะคะวะโต อะระหะโต สัมมาสัมพุทธัสสะ \U0001F64F')
 
+    if message.content == 'กวิสรา':
+        print(message.channel)
+        await message.channel.send('กวิสราเป็นนางฟ้าที่สวยเเละน่ารักที่สุดในจักรวาลนี้เเละจักรวาลหน้า \U0001F60F')
+
+    if message.content == 'สิริกาญจน์':
+        print(message.channel)
+        await message.channel.send('คนนี้เหลี่ยมหนา') 
+
+    if message.content == 'ไข่มุก':
+        print(message.channel)
+        await message.channel.send('โฮ่งๆ  //กัดโซฟาอยู่ \U0001F415')
+
     if message.content == 'โง่':
         print(message.channel)
         await message.channel.send('ไปนอนไอ้เด็กเหี้ย')
+
+    if message.content == 'เกินปุยมุ้ย':
+        print(message.channel)
+        await message.channel.send('เกินอะไร เดี๋ยวตบปาก')
+
+    if message.content == 'ฝันดี':
+        print(message.channel)
+        await message.channel.send('ฝันดีครับ \U0001F319')
 
     if message.content == 'gg':
         print(message.channel)
         choicesss = ("ez", "wp")
         ans4 = random.choice(choicesss)
         await message.channel.send(ans4)
+
+    if message.content == 'ใครจะได้แชมป์พรีเมียร์ลีก':
+        print(message.channel)
+        choice1 = ("ลิเวอร์พูล \U0001F534", "ไม่ใช่แมนยู \U0000274C", "ไม่ใช่แมนซิตี้ \U0001F535")
+        ans7 = random.choice(choice1)
+        await message.channel.send(ans7)
 
     if message.content == 'ขอบคุณ':
         print(message.channel)
