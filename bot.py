@@ -171,6 +171,30 @@ async def on_message(message):
     if message.content == 'ฝันดี':
         print(message.channel)
         await message.channel.send('ฝันดีครับ \U0001F319')
+        
+    if message.content == '555':
+        print(message.channel)
+        await message.channel.send('ขำมากมั้ง')
+
+    if message.content == '5555':
+        print(message.channel)
+        await message.channel.send('ขำมากมั้ง')
+
+    if message.content == '55555':
+        print(message.channel)
+        await message.channel.send('ขำมากมั้ง')
+
+    if message.content == '555555':
+        print(message.channel)
+        await message.channel.send('ขำมากมั้ง')
+
+    if message.content == '5555555':
+        print(message.channel)
+        await message.channel.send('ขำมากมั้ง')
+
+    if message.content == '55555555':
+        print(message.channel)
+        await message.channel.send('ขำมากมั้ง')
 
     if message.content == 'gg':
         print(message.channel)
