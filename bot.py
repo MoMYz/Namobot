@@ -156,6 +156,10 @@ async def on_message(message):
         print(message.channel)
         await message.channel.send('โฮ่งๆ  //กัดโซฟาอยู่ \U0001F415')
 
+    if message.content == 'ธนวิน':
+        print(message.channel)
+        await message.channel.send('ทำไมธนวินเท่จัง')
+
     if message.content == 'โง่':
         print(message.channel)
         await message.channel.send('ไปนอนไอ้เด็กเหี้ย')
