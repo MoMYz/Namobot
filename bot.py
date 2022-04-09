@@ -134,20 +134,24 @@ async def on_message(message):
 
     if message.content == 'ใครเหลี่ยมที่สุด':
         print(message.channel)
-        await message.channel.send("<@860033778072551444>")  
-       
+        await message.channel.send("<@860033778072551444>")
+
     if message.content == 'นะโม':
         print(message.channel)
         await message.channel.send('นะโม ตัสสะ ภะคะวะโต อะระหะโต สัมมาสัมพุทธัสสะ \U0001F64F')
 
     if message.content == 'กวิสรา':
         print(message.channel)
-        await message.channel.send('กวิสราเป็นนางฟ้าที่สวยเเละน่ารักที่สุดในจักรวาลนี้เเละจักรวาลหน้า \U0001F60F')
+        await message.channel.send('กวิสราเป็นนางฟ้าที่สวยเเละน่ารักที่สุดในจักรวาลนี้เเละจักรวาลหน้า \U0001F607')
 
     if message.content == 'สิริกาญจน์':
         print(message.channel)
-        await message.channel.send('คนนี้เหลี่ยมหนา') 
+        await message.channel.send('โสด น่ารัก เลี้ยงหมาเก่ง \U0001F415') 
 
+    if message.content == 'ภทรวรรณ':
+        print(message.channel)
+        await message.channel.send('ภทรวรรณสวยที่สุดในโลก \U0001F60F')
+    
     if message.content == 'ไข่มุก':
         print(message.channel)
         await message.channel.send('โฮ่งๆ  //กัดโซฟาอยู่ \U0001F415')
