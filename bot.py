@@ -36,7 +36,7 @@ async def on_ready():
 async def botdev(context):
     
     myEmbed = discord.Embed(title='Bot developer:', description='<@462935839379292160>',color=0x66CD00)
-    myEmbed.add_field(name="Bot version:", value="V.3.0.1", inline=False)
+    myEmbed.add_field(name="Bot version:", value="V.4.0.5", inline=False)
     myEmbed.set_author(name="Namo")
     myEmbed.add_field(name="Date released:", value="26 March 2022", inline=False)
     
