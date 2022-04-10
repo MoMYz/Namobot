@@ -25,7 +25,7 @@ api_sec = os.getenv('API_SECRET')
 client = discord.Client()
 client = commands.Bot(command_prefix='!')
 
-client.add_cog(music_cog(client))
+#client.add_cog(music_cog(client))
 
 @client.event
 async def on_ready():
