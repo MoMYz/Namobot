@@ -171,6 +171,10 @@ async def on_message(message):
     if message.content == 'ภูรี':
         print(message.channel)
         await message.channel.send('ผมเท่กว่าธนวินครับ')
+        
+    if message.content == 'ศศินิภา':
+        print(message.channel)
+        await message.channel.send('IG: sasinipa.tt')
 
     if message.content == 'โง่':
         print(message.channel)
