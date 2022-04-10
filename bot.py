@@ -25,12 +25,12 @@ api_sec = os.getenv('API_SECRET')
 client = discord.Client()
 client = commands.Bot(command_prefix='!')
 
-#client.add_cog(music_cog(client))
+client.add_cog(music_cog(client))
 
 @client.event
 async def on_ready():
     print('Bot is ready')
-    await client.change_presence(status=discord.Status.online, activity=discord.Game("Namolnwza007 | !command"))
+    await client.change_presence(status=discord.Status.online, activity=discord.Game("Namolnwza007 | !help"))
 
 @client.command()
 async def botdev(context):
@@ -124,6 +124,10 @@ async def on_message(message):
         print(message.channel)
         await message.channel.send(ans3)        
 
+    if message.content == 'ดีกันนะ':
+        print(message.channel)
+        await message.channel.send("คืนดีกันเถอะนะเพื่อนๆ \U0001F97A\U0001F64F")
+
     if message.content == 'ควาย':
         print(message.channel)
         await message.channel.send(f"\U0001F449 {message.author.mention}")               
@@ -160,18 +164,18 @@ async def on_message(message):
         print(message.channel)
         await message.channel.send('ทำไมธนวินเท่จัง')
 
+    if message.content == 'ยูฟ่า':
+        print(message.channel)
+        await message.channel.send('ยาฟู่ not ยูฟ่า')
+
+    if message.content == 'จุ๊':
+        print(message.channel)
+        await message.channel.send('ชื่อไรนะ ลืมๆ โทษครับ')
+
     if message.content == 'โง่':
         print(message.channel)
         await message.channel.send('ไปนอนไอ้เด็กเหี้ย')
 
-    if message.content == 'เกินปุยมุ้ย':
-        print(message.channel)
-        await message.channel.send('เกินอะไร เดี๋ยวตบปาก')
-
-    if message.content == 'ฝันดี':
-        print(message.channel)
-        await message.channel.send('ฝันดีครับ \U0001F319')
-        
     if message.content == '555':
         print(message.channel)
         await message.channel.send('ขำมากมั้ง')
@@ -195,6 +199,14 @@ async def on_message(message):
     if message.content == '55555555':
         print(message.channel)
         await message.channel.send('ขำมากมั้ง')
+
+    if message.content == 'เกินปุยมุ้ย':
+        print(message.channel)
+        await message.channel.send('เกินอะไร เดี๋ยวตบปาก')
+
+    if message.content == 'ฝันดี':
+        print(message.channel)
+        await message.channel.send('ฝันดีครับ \U0001F319')
 
     if message.content == 'gg':
         print(message.channel)
