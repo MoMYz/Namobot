@@ -150,7 +150,7 @@ async def on_message(message):
 
     if message.content == 'สิริกาญจน์':
         print(message.channel)
-        await message.channel.send('โสด น่ารัก เลี้ยงหมาเก่ง \U0001F415') 
+        await message.channel.send('โสด น่ารัก เลี้ยงหมาเก่ง \U0001F415')            
 
     if message.content == 'ภทรวรรณ':
         print(message.channel)
