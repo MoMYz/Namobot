@@ -168,9 +168,9 @@ async def on_message(message):
         print(message.channel)
         await message.channel.send('ยาฟู่ not ยูฟ่า')
 
-    if message.content == 'จุ๊':
+    if message.content == 'ภูรี':
         print(message.channel)
-        await message.channel.send('ชื่อไรนะ ลืมๆ โทษครับ')
+        await message.channel.send('ผมเท่กว่าธนวินครับ')
 
     if message.content == 'โง่':
         print(message.channel)
