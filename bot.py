@@ -135,6 +135,10 @@ async def on_message(message):
         print(message.channel)
         await message.channel.send("<@462935839379292160>")
 
+    if message.content == 'buddy':
+        print(message.channel)
+        await message.channel.send("My buddy is <@462935839379292160>")
+
     if message.content == 'นะโม':
         print(message.channel)
         await message.channel.send('นะโม ตัสสะ ภะคะวะโต อะระหะโต สัมมาสัมพุทธัสสะ \U0001F64F')
