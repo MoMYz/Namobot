@@ -139,6 +139,10 @@ async def on_message(message):
         print(message.channel)
         await message.channel.send("My buddy is <@462935839379292160>")
 
+    if message.content == '\U0001F345':
+        print(message.channel)
+        await message.channel.send("ไปปลูกมะเขือเทศกันเถอะ")
+
     if message.content == 'นะโม':
         print(message.channel)
         await message.channel.send('นะโม ตัสสะ ภะคะวะโต อะระหะโต สัมมาสัมพุทธัสสะ \U0001F64F')
@@ -149,7 +153,11 @@ async def on_message(message):
 
     if message.content == 'สิริกาญจน์':
         print(message.channel)
-        await message.channel.send('โสด น่ารัก เลี้ยงหมาเก่ง \U0001F415') 
+        await message.channel.send('โสด น่ารัก เลี้ยงหมาเก่ง \U0001F415')
+
+    if message.content == 'ศศินิภา':
+        print(message.channel)
+        await message.channel.send('sasinipa.tt') 
 
     if message.content == 'ภทรวรรณ':
         print(message.channel)
