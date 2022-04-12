@@ -115,17 +115,15 @@ async def song(context):
 
 @client.event
 async def on_message(message):
-    
-    bot = f'<@!{client.user.id}>'
-    if message.content == bot:
-        choicess = (f"ว่าไงวัยรุ่น {message.author.mention}", f"ครับท่าน {message.author.mention}")
-        ans3 = random.choice(choicess)
-        print(message.channel)
-        await message.channel.send(ans3)                    
+                       
 
     if message.content == '<@462935839379292160>':
         print(message.channel)
         await message.channel.send("ไม่ต้องเรียก อารมณ์ไม่ดี")
+
+    if message.content == '<@956937115445383279> โง่':
+        print(message.channel)
+        await message.channel.send("หุบปาก")
 
     if message.content == '<@462935839379292160> โง่':
         print(message.channel)
