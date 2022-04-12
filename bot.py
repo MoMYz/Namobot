@@ -232,6 +232,12 @@ async def on_message(message):
         choicesss = ("ez", "wp")
         ans4 = random.choice(choicesss)
         await message.channel.send(ans4)
+        
+    if message.content == 'โกหกไหม':
+        print(message.channel)
+        c = ("ไม่", "ใช่")
+        ans7 = random.choice(c)
+        await message.channel.send(ans7)
 
     if message.content == 'ใครจะได้แชมป์พรีเมียร์ลีก':
         print(message.channel)
