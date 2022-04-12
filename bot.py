@@ -145,7 +145,7 @@ async def on_message(message):
 
     if message.content == '\U0001F345':
         print(message.channel)
-        await message.channel.send("ไปปลูกมะเขือเทศกันเถอะ")
+        await message.channel.send("ไปปลูกมะเขือเทศกันเถอะ \U0001F345")
 
     if message.content == 'นะโม':
         print(message.channel)
