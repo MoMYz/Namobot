@@ -123,22 +123,22 @@ async def on_message(message):
         ans3 = random.choice(choicess)
         print(message.channel)
         await message.channel.send(ans3)        
-
-    if message.content == 'ดีกันนะ':
-        print(message.channel)
-        await message.channel.send("คืนดีกันเถอะนะเพื่อนๆ \U0001F97A\U0001F64F")
-
+    
     if message.content == 'ควาย':
         print(message.channel)
         await message.channel.send(f"\U0001F449 {message.author.mention}")               
 
+    if message.content == '<@462935839379292160>':
+        print(message.channel)
+        await message.channel.send("ไม่ต้องเรียก อารมณ์ไม่ดี")    
+        
+    if message.content == '<@462935839379292160> โง่':
+        print(message.channel)
+        await message.channel.send("ขอโทษที่โง่")
+        
     if message.content == 'ใครหล่อที่สุด':
         print(message.channel)
         await message.channel.send("<@462935839379292160>")
-
-    if message.content == 'ใครเหลี่ยมที่สุด':
-        print(message.channel)
-        await message.channel.send("<@860033778072551444>")
 
     if message.content == 'นะโม':
         print(message.channel)
@@ -155,10 +155,6 @@ async def on_message(message):
     if message.content == 'ภทรวรรณ':
         print(message.channel)
         await message.channel.send('ภทรวรรณสวยที่สุดในโลก \U0001F60F')
-    
-    if message.content == 'ไข่มุก':
-        print(message.channel)
-        await message.channel.send('โฮ่งๆ  //กัดโซฟาอยู่ \U0001F415')
 
     if message.content == 'ธนวิน':
         print(message.channel)
