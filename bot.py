@@ -125,7 +125,7 @@ async def on_message(message):
 
     if message.content == '<@462935839379292160>':
         print(message.channel)
-        await message.channel.send("ลูกพี่ผมยังไม่ว่างครับ")
+        await message.channel.send("ไม่ต้องเรียก อารมณ์ไม่ดี")
 
     if message.content == '<@462935839379292160> โง่':
         print(message.channel)
@@ -133,7 +133,7 @@ async def on_message(message):
 
     if message.content == 'ใครหล่อที่สุด':
         print(message.channel)
-        await message.channel.send("<@462935839379292160>")
+        await message.channel.send("<@462935839379292160> \U0001F60E")
 
     if message.content == 'ใครเหลี่ยมที่สุด':
         print(message.channel)
