@@ -6,7 +6,7 @@ from discord.utils import get
 from pydoc import cli
 from ast import alias
 from youtube_dl import YoutubeDL
-#from music_cog import music_cog
+from music_cog import music_cog
 from multiprocessing import get_context
 from secrets import choice
 from unicodedata import name
@@ -25,7 +25,7 @@ api_sec = os.getenv('API_SECRET')
 client = discord.Client()
 client = commands.Bot(command_prefix='!')
 
-#client.add_cog(music_cog(client))
+client.add_cog(music_cog(client))
 
 @client.event
 async def on_ready():
@@ -93,7 +93,6 @@ async def command(context):
     myEmbed.add_field(name='!botdev', value='Bot developer', inline=False)
     myEmbed.add_field(name='!twitch', value='My twitch', inline=False)
     myEmbed.add_field(name='!ig', value='My instagram', inline=False)
-    myEmbed.add_field(name='!kuy', value='ด่าบอท', inline=False)
     myEmbed.add_field(name='!ต่อยกับ (mention someone)', value='ต่อยกับใครก็ได้', inline=False)
     myEmbed.add_field(name='!ความเหลี่ยม', value='เช็คความเหลี่ยมของคุณ', inline=False)
     myEmbed.add_field(name='!randomnumber10', value='Random number 1-10', inline=False)
@@ -122,23 +121,23 @@ async def on_message(message):
         choicess = (f"ว่าไงวัยรุ่น {message.author.mention}", f"ครับท่าน {message.author.mention}")
         ans3 = random.choice(choicess)
         print(message.channel)
-        await message.channel.send(ans3)        
-    
-    if message.content == 'ควาย':
-        print(message.channel)
-        await message.channel.send(f"\U0001F449 {message.author.mention}")               
+        await message.channel.send(ans3)                    
 
     if message.content == '<@462935839379292160>':
         print(message.channel)
-        await message.channel.send("ไม่ต้องเรียก อารมณ์ไม่ดี")    
-        
+        await message.channel.send("ไม่ต้องเรียก อารมณ์ไม่ดี")
+
     if message.content == '<@462935839379292160> โง่':
         print(message.channel)
         await message.channel.send("ขอโทษที่โง่")
-        
+
     if message.content == 'ใครหล่อที่สุด':
         print(message.channel)
         await message.channel.send("<@462935839379292160>")
+
+    if message.content == 'ใครเหลี่ยมที่สุด':
+        print(message.channel)
+        await message.channel.send("<@860033778072551444>")
 
     if message.content == 'นะโม':
         print(message.channel)
@@ -150,7 +149,7 @@ async def on_message(message):
 
     if message.content == 'สิริกาญจน์':
         print(message.channel)
-        await message.channel.send('โสด น่ารัก เลี้ยงหมาเก่ง \U0001F415')            
+        await message.channel.send('โสด น่ารัก เลี้ยงหมาเก่ง \U0001F415') 
 
     if message.content == 'ภทรวรรณ':
         print(message.channel)
@@ -160,17 +159,17 @@ async def on_message(message):
         print(message.channel)
         await message.channel.send('ทำไมธนวินเท่จัง')
 
+    if message.content == 'ภูรี':
+        print(message.channel)
+        await message.channel.send('ภูรีที่ไม่ใช่ภูริต')
+
     if message.content == 'ยูฟ่า':
         print(message.channel)
         await message.channel.send('ยาฟู่ not ยูฟ่า')
 
-    if message.content == 'ภูรี':
+    if message.content == 'จุ๊':
         print(message.channel)
-        await message.channel.send('ผมเท่กว่าธนวินครับ')
-        
-    if message.content == 'ศศินิภา':
-        print(message.channel)
-        await message.channel.send('IG: sasinipa.tt')
+        await message.channel.send('ชื่อจูจู ไม่ใช่จุ๊จุ๊')
 
     if message.content == 'โง่':
         print(message.channel)
