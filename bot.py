@@ -203,6 +203,10 @@ async def on_message(message):
         print(message.channel)
         await message.channel.send('ฝันดีครับ \U0001F319')
 
+    if message.content == 'ขอโทษ':
+        print(message.channel)
+        await message.channel.send('ไม่เป็นไรครับ ไม่ให้อภัย')
+
     if message.content == 'gg':
         print(message.channel)
         choicesss = ("ez", "wp")
