@@ -141,6 +141,10 @@ async def on_message(message):
         print(message.channel)
         await message.channel.send("<@860033778072551444>")
 
+    if message.content == 'โมโห':
+        print(message.channel)
+        await message.channel.send("โมโฮแล้วนะ")
+
     if message.content == 'ใครน่ารักที่สุด':
         print(message.channel)
         await message.channel.send("<@860033778072551444>")
