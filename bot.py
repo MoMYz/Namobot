@@ -56,7 +56,11 @@ async def ig(context):
 
 @client.command()
 async def playlist(context):
-    await context.send(f"{context.author.mention} https://open.spotify.com/playlist/2r8ETdblQPWw3917iuDIqQ?si=26e99fd0b88d4908")
+    await context.send("https://open.spotify.com/playlist/2r8ETdblQPWw3917iuDIqQ?si=26e99fd0b88d4908")
+    
+@client.command()
+async def clip(context):
+    await context.send("https://clips.twitch.tv/HealthyAbstemiousSaladHeyGuys-n4_XRcIbCw4N3JAy")
 
 @client.command()
 async def ความเหลี่ยม(context):
