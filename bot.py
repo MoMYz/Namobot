@@ -400,7 +400,7 @@ async def rps(ctx, message):
         return
     else:
         if computers_answer == answer:
-            await ctx.send(f'Tie! คุณสองคนเลือก {answer}')
+            await ctx.send(f'Tie!, both of you chose {answer}')
         if computers_answer == 'rock':
             if answer == 'paper':
                 await ctx.send(f'You win!, just lucky. I picked {computers_answer} and you picked{answer}')               
