@@ -393,7 +393,7 @@ async def place_error(ctx, error):
 @client.command()
 async def rps(ctx, message):
     answer = message.lower()
-    ch = ['rock', 'paper', 'scissors']
+    ch = ['/U0001F44A', '/U0001F64C', '/U000270C']
     computers_answer = random.choice(ch)
     if answer not in ch:
         await ctx.send('เลือกใหม่ลูกหรี่: (rock, paper, scissors)')
@@ -401,25 +401,25 @@ async def rps(ctx, message):
     else:
         if computers_answer == answer:
             await ctx.send(f'Tie!, both of you chose {answer}')
-        if computers_answer == 'rock':
-            if answer == 'paper':
+        if computers_answer == '/U0001F44A':
+            if answer == '/U0001F64C':
                 await ctx.send(f'You win!, just lucky. I picked {computers_answer} and you picked{answer}')               
-        if computers_answer == 'paper':
-            if answer == 'rock':
+        if computers_answer == '/U0001F64C':
+            if answer == '/U0001F44A':
                 await ctx.send(f'I win!, you so fucking noob la. I picked {computers_answer} and you picked {answer}')
 
-        if computers_answer == 'scissors':
-            if answer == 'rock':
+        if computers_answer == '/U000270C':
+            if answer == '/U0001F44A':
                 await ctx.send(f'You win!, just lucky. I picked {computers_answer} and you picked{answer}')               
-        if computers_answer == 'rock':
-            if answer == 'scissors':
+        if computers_answer == '/U0001F44A':
+            if answer == '/U000270C':
                 await ctx.send(f'I win!, you so fucking noob la. I picked {computers_answer} and you picked {answer}')
 
-        if computers_answer == 'paper':
-            if answer == 'scissors':
+        if computers_answer == '/U0001F64C':
+            if answer == '/U000270C':
                 await ctx.send(f'You win!, just lucky. I picked {computers_answer} and you picked{answer}')               
-        if computers_answer == 'scissors':
-            if answer == 'paper':
+        if computers_answer == '/U000270C':
+            if answer == '/U0001F64C':
                 await ctx.send(f'I win!, you so fucking noob la. I picked {computers_answer} and you picked {answer}')
 
 client.run(os.environ['token'])
