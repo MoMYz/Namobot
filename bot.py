@@ -390,4 +390,36 @@ async def place_error(ctx, error):
     elif isinstance(error, commands.BadArgument):
         await ctx.send("Please make sure to enter an integer.")
 
+@client.command()
+async def rps(ctx, message):
+    answer = message.lower()
+    ch = ['rock', 'paper', 'scissors']
+    computers_answer = random.choice(ch)
+    if answer not in ch:
+        await ctx.send('เลือกใหม่ลูกหรี่: (rock, paper, scissors)')
+        return
+    else:
+        if computers_answer == answer:
+            await ctx.send(f'Tie! คุณสองคนเลือก {answer}')
+        if computers_answer == 'rock':
+            if answer == 'paper':
+                await ctx.send(f'You win!, just lucky. I picked {computers_answer} and you picked{answer}')               
+        if computers_answer == 'paper':
+            if answer == 'rock':
+                await ctx.send(f'I win!, you so fucking noob la. I picked {computers_answer} and you picked {answer}')
+
+        if computers_answer == 'scissors':
+            if answer == 'rock':
+                await ctx.send(f'You win!, just lucky. I picked {computers_answer} and you picked{answer}')               
+        if computers_answer == 'rock':
+            if answer == 'scissors':
+                await ctx.send(f'I win!, you so fucking noob la. I picked {computers_answer} and you picked {answer}')
+
+        if computers_answer == 'paper':
+            if answer == 'scissors':
+                await ctx.send(f'You win!, just lucky. I picked {computers_answer} and you picked{answer}')               
+        if computers_answer == 'scissors':
+            if answer == 'paper':
+                await ctx.send(f'I win!, you so fucking noob la. I picked {computers_answer} and you picked {answer}')
+
 client.run(os.environ['token'])
