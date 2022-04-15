@@ -196,6 +196,10 @@ async def on_message(message):
     if message.content == 'โง่':
         print(message.channel)
         await message.channel.send('ไปนอนไอ้เด็กเหี้ย')
+        
+    if message.content == 'แรงไป':
+        print(message.channel)
+        await message.channel.send('แรงไปหรอ ขอโทษครับ')
 
     if message.content == '555':
         print(message.channel)
