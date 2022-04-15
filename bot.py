@@ -403,21 +403,21 @@ async def rps(ctx, message):
             await ctx.send(f'Tie!, both of you chose {answer}')
         if computers_answer == 'rock':
             if answer == 'paper':
-                await ctx.send(f'You win!, just lucky. I picked {computers_answer} and you picked{answer}')               
+                await ctx.send(f'You win!, just lucky. I picked {computers_answer} and you picked {answer}')               
         if computers_answer == 'paper':
             if answer == 'rock':
                 await ctx.send(f'I win!, you so fucking noob la. I picked {computers_answer} and you picked {answer}')
 
         if computers_answer == 'scissors':
             if answer == 'rock':
-                await ctx.send(f'You win!, just lucky. I picked {computers_answer} and you picked{answer}')               
+                await ctx.send(f'You win!, just lucky. I picked {computers_answer} and you picked {answer}')               
         if computers_answer == 'rock':
             if answer == 'scissors':
                 await ctx.send(f'I win!, you so fucking noob la. I picked {computers_answer} and you picked {answer}')
 
         if computers_answer == 'paper':
             if answer == 'scissors':
-                await ctx.send(f'You win!, just lucky. I picked {computers_answer} and you picked{answer}')               
+                await ctx.send(f'You win!, just lucky. I picked {computers_answer} and you picked {answer}')               
         if computers_answer == 'scissors':
             if answer == 'paper':
                 await ctx.send(f'I win!, you so fucking noob la. I picked {computers_answer} and you picked {answer}')
