@@ -25,7 +25,7 @@ api_sec = os.getenv('API_SECRET')
 client = discord.Client()
 client = commands.Bot(command_prefix='!')
 
-#client.add_cog(music_cog(client))
+client.add_cog(music_cog(client))
 
 @client.event
 async def on_ready():
@@ -196,14 +196,14 @@ async def on_message(message):
     if message.content == 'โง่':
         print(message.channel)
         await message.channel.send('ไปนอนไอ้เด็กเหี้ย')
-        
+
     if message.content == 'แรงไป':
         print(message.channel)
         await message.channel.send('แรงไปหรอ ขอโทษครับ')
-        
+
     if message.content == 'แง้ว':
         print(message.channel)
-        await message.channel.send('แง้วๆ')
+        await message.channel.send('แง้วๆ >.<')
 
     if message.content == '555':
         print(message.channel)
