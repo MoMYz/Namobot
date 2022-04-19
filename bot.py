@@ -6,7 +6,7 @@ from discord.utils import get
 from pydoc import cli
 from ast import alias
 from youtube_dl import YoutubeDL
-from music_cog import music_cog
+#from music_cog import music_cog
 from multiprocessing import get_context
 from secrets import choice
 from unicodedata import name
@@ -25,7 +25,7 @@ api_sec = os.getenv('API_SECRET')
 client = discord.Client()
 client = commands.Bot(command_prefix='!')
 
-client.add_cog(music_cog(client))
+#client.add_cog(music_cog(client))
 
 @client.event
 async def on_ready():
