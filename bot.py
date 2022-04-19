@@ -140,6 +140,10 @@ async def on_message(message):
     if message.content == 'ใครเหลี่ยมที่สุด':
         print(message.channel)
         await message.channel.send("<@860033778072551444>")
+        
+    if message.content == 'แง้ว':
+        print(message.channel)
+        await message.channel.send('แง้วๆ >.<')
 
     if message.content == 'โมโห':
         print(message.channel)
@@ -200,10 +204,6 @@ async def on_message(message):
     if message.content == 'แรงไป':
         print(message.channel)
         await message.channel.send('แรงไปหรอ ขอโทษครับ')
-
-    if message.content == 'แง้ว':
-        print(message.channel)
-        await message.channel.send('แง้วๆ >.<')
 
     if message.content == '555':
         print(message.channel)
